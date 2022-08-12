@@ -1,0 +1,103 @@
+
+html {
+    /*font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;*/
+    font-family: poppins;
+}
+
+body {
+    margin: 0;
+    padding:0;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+h1,h2,h3,h4,h5,h6, p {
+    font-size: 1rem;
+    padding:0;
+    margin:0;
+}
+
+ul {
+    list-style:none;
+    padding:0;
+    margin:0;
+}
+
+ul li {
+    margin:0;
+    padding:0;
+}
+
+/**************************************/
+
+:root {
+    --global-edge-padding: 25px 35px;
+}
+
+.wrapper {
+    max-width:550px;
+    margin: 50px auto;
+    box-shadow: 6px 9px 23px 10px rgba(0,0,0,0.21);
+    border-radius: 8.95px;
+}
+
+.header {
+    height:70px;
+    width:100%;
+    display:flex;
+    align-items: center;
+    box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.21);
+    padding: var(--global-edge-padding);
+}
+
+.header .logo {
+    display: flex;
+}
+
+.main-content {
+    padding: var(--global-edge-padding);
+}
+
+.hero-collage-container {
+    height:232px;
+    display:flex;
+    justify-content: center;
+}
+   
+.collage-col {
+    flex:0;
+}
+
+.collage-col img {
+    margin:1px 4px;
+}
+
+.cc-01, .cc-05 {
+    align-self: center;
+}
+
+.cc-02, .cc-04  {
+    align-self: flex-start;
+}
+
+.cc-03 {
+    align-self: flex-end;
+}
+
+.cc-02 {
+    margin-top: 5px;
+}
+
+.hero-txt h1 {
+    font-size: 2.25rem;
+    margin: 10px 0;
+
+}
+
+
+.hero-txt p {
+    font-size: 1rem;
+    width: 320px;
+}
