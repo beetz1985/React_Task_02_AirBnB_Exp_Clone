@@ -4,7 +4,6 @@ import Header from "./components/Header"
 import Card from "./components/Card"
 
 import image12 from "./assets/hero_imgs/image12.png"
-import image11 from "./assets/hero_imgs/image11.png"
 
 function App() {
     return (
@@ -15,15 +14,11 @@ function App() {
                 {/* <HeroText /> */}
                 <Card 
                     img={image12}
-                    name="Ben Toulson"
-                    rating="5"
-                    price="$199"
-                />
-                <Card 
-                    img={image11}
-                    name="Dave Elisson"
-                    rating="1"
-                    price="$9"               
+                    rating="5.0"
+                    reviewCount={6}
+                    country="USA"
+                    title="Life lessons with Katie Zaferes"
+                    price={136}
                 />
             </main>
         </div>

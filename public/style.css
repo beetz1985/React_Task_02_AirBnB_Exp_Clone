@@ -139,11 +139,12 @@ ul li {
 
 .star-review, .star-review span {
     display:flex;
+    align-items: center;
 }
 
 .details .star-review span img{
-    height:14px;
-    width:14px;
+    height:11px;
+    width:11px;
 }
 
 .details .star-review span:last-child {
