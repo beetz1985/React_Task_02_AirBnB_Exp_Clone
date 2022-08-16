@@ -102,6 +102,7 @@ ul li {
 .hero-txt p {
     font-size: 1rem;
     width: 320px;
+    font-weight:300;
 }
 
 
@@ -112,7 +113,11 @@ ul li {
     flex-direction: column;
     position: relative;
     max-width:176px;
-    margin: 50px auto;
+    margin: 10px 20px 10px 0;
+}
+
+.card img {
+    border-radius: 9px;
 }
 
 .card p {
@@ -134,8 +139,19 @@ ul li {
 }
 
 .details {
+    flex: 1;
+
     padding: 2px 0;
+    display:flex;
+    flex-direction: column;
 }
+
+.details .price {
+    flex:1;
+    display: flex;
+    align-items: flex-end;
+}
+
 
 .star-review, .star-review span {
     display:flex;
@@ -150,3 +166,13 @@ ul li {
 .details .star-review span:last-child {
     color:#918E9B;
 }
+
+.cards {
+    overflow-x: scroll;
+    margin: 50px 0;
+}
+
+.cards-inner {
+    display:flex;
+}
+

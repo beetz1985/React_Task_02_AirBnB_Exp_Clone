@@ -1,25 +1,28 @@
 import Header from "./components/Header"
-//import Hero from "./components/Hero"
-//import HeroText from "./components/Hero-txt"
+import Hero from "./components/Hero"
+import HeroText from "./components/Hero-txt"
 import Card from "./components/Card"
+import data from "./Data/data"
 
-import image12 from "./assets/hero_imgs/image12.png"
+
+
+
 
 function App() {
+
+    const cardComponents = data.map(v=><Card key={v.id} item={v}/>);
+
     return (
         <div className="wrapper">
             <Header />
             <main className="main-content">
-                {/* <Hero /> */}
-                {/* <HeroText /> */}
-                <Card 
-                    img={image12}
-                    rating="5.0"
-                    reviewCount={6}
-                    country="USA"
-                    title="Life lessons with Katie Zaferes"
-                    price={136}
-                />
+                <Hero />
+                <HeroText />
+                <section className="cards">
+                    <div className="cards-inner">
+                        {cardComponents}     
+                    </div>
+                </section>
             </main>
         </div>
     )
